@@ -1,37 +1,46 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
+  background-color: #eaf9f9;
   padding: 20px;
+  margin: 0;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 30px;
+  color: #333;
+  margin-bottom: 40px;
 }
 
 .semestre {
-  margin-bottom: 40px;
-  padding: 15px;
+  background-color: #ffffff;
   border: 2px solid #ccc;
   border-radius: 12px;
-  background-color: #ffffff;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .semestre h2 {
   margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
 }
 
 .ramo {
   background-color: #40e0d0; /* turquesa */
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 6px;
+  color: black;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .ramo.aprobado {
-  background-color: #9370db; /* morado */
-  text-decoration: line-through;
+  background-color: #6a0dad; /* morado */
   color: white;
+  text-decoration: line-through;
 }
+
