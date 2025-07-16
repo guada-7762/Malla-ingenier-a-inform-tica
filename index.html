@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Malla Curricular Interactiva</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaf9f9;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .semestre {
+      background-color: #ffffff;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .semestre h2 {
+      margin-top: 0;
+      color: #2c3e50;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .ramo {
+      background-color: #40e0d0;
+      color: black;
+      margin: 8px 0;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .ramo.aprobado {
+      background-color: #6a0dad;
+      color: white;
+      text-decoration: line-through;
+    }
+  </style>
 </head>
 <body>
   <h1>Malla Curricular Interactiva</h1>
 
-  <!-- 1° Semestre -->
+  <!-- 1° al 8° Semestre aquí (resumido por espacio) -->
   <div class="semestre">
     <h2>1° Semestre</h2>
     <div class="ramo" onclick="toggleAprobado(this)">Álgebra I</div>
@@ -18,7 +64,6 @@
     <div class="ramo" onclick="toggleAprobado(this)">Habilidades Académicas I</div>
   </div>
 
-  <!-- 2° Semestre -->
   <div class="semestre">
     <h2>2° Semestre</h2>
     <div class="ramo" onclick="toggleAprobado(this)">Álgebra II</div>
@@ -30,7 +75,6 @@
     <div class="ramo" onclick="toggleAprobado(this)">Habilidades Académicas II</div>
   </div>
 
-  <!-- 3° Semestre -->
   <div class="semestre">
     <h2>3° Semestre</h2>
     <div class="ramo" onclick="toggleAprobado(this)">Cálculo II</div>
@@ -41,7 +85,6 @@
     <div class="ramo" onclick="toggleAprobado(this)">Ética y Ciudadanía</div>
   </div>
 
-  <!-- 4° Semestre -->
   <div class="semestre">
     <h2>4° Semestre</h2>
     <div class="ramo" onclick="toggleAprobado(this)">Estadística I</div>
@@ -52,7 +95,6 @@
     <div class="ramo" onclick="toggleAprobado(this)">Responsabilidad Social Universitaria</div>
   </div>
 
-  <!-- 5° Semestre -->
   <div class="semestre">
     <h2>5° Semestre (Ciclo Intermedio)</h2>
     <div class="ramo" onclick="toggleAprobado(this)">Estadística II</div>
@@ -65,7 +107,6 @@
     <div class="ramo" onclick="toggleAprobado(this)">Electivo de Formación General I</div>
   </div>
 
-  <!-- 6° Semestre -->
   <div class="semestre">
     <h2>6° Semestre (Ciclo Intermedio)</h2>
     <div class="ramo" onclick="toggleAprobado(this)">Innovación, Emprendimiento y Sustentabilidad</div>
@@ -76,7 +117,6 @@
     <div class="ramo" onclick="toggleAprobado(this)">Electivo de Formación General II</div>
   </div>
 
-  <!-- 7° Semestre -->
   <div class="semestre">
     <h2>7° Semestre</h2>
     <div class="ramo" onclick="toggleAprobado(this)">Optimización de Sistemas</div>
@@ -86,7 +126,6 @@
     <div class="ramo" onclick="toggleAprobado(this)">Ciberseguridad</div>
   </div>
 
-  <!-- 8° Semestre -->
   <div class="semestre">
     <h2>8° Semestre (Ciclo Titulación)</h2>
     <div class="ramo" onclick="toggleAprobado(this)">Actividad de Titulación</div>
@@ -97,9 +136,15 @@
     <div class="ramo" onclick="toggleAprobado(this)">Diseño y Auditoría en Ciberseguridad</div>
   </div>
 
-  <script src="script.js"></script>
+  <script>
+    function toggleAprobado(elemento) {
+      elemento.classList.toggle('aprobado');
+    }
+  </script>
 </body>
 </html>
+
+ 
 
    
    
