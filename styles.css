@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.semestre {
+  margin-bottom: 40px;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.semestre h2 {
+  margin-top: 0;
+}
+
+.ramo {
+  background-color: #40e0d0; /* turquesa */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ramo.aprobado {
+  background-color: #9370db; /* morado */
+  text-decoration: line-through;
+  color: white;
+}
